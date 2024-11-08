@@ -3,7 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 import { Shield, Briefcase, Target, Music, DollarSign, Star } from 'lucide-react'
 
-export function IndustryInsights({ language = 'en' }) {
+type Language = 'en' | 'es';
+export function IndustryInsights({ language = 'en' } : { language?: Language }) {
   const content = {
     en: {
       title: "Phase 1: Industry Insights & Crucial Knowledge",

@@ -3,7 +3,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 import { Music, FileCheck, Globe, List, Info } from 'lucide-react'
 
-export function TechnicalSetup({ language = 'en' }) {
+
+type Language = 'en' | 'es';
+export function TechnicalSetup({ language = 'en' } : { language?: Language }) {
 const content = {
   en: {
     title: "Technical Setup & Registrations",

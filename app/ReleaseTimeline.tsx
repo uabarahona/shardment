@@ -3,7 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 import { Calendar, Clock, AlertTriangle, CheckSquare, Info, Music } from 'lucide-react'
 
-export function ReleaseTimeline({ language = 'en' }) {
+type Language = 'en' | 'es';
+export function ReleaseTimeline({ language = 'en' } : { language?: Language }) {
 const content = {
   en: {
     title: "Release Timeline & Essentials",

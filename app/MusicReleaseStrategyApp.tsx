@@ -11,9 +11,10 @@ import { ContentPlanner } from './ContentPlanner'
 import { PerformanceMetrics } from './PerformanceMetrics'
 import { TechnicalSetup } from './TechnicalSetup'
 
+type Language = 'en' | 'es';
 export default function MusicReleaseStrategyApp() {
   const [active, setActive] = useState('timeline')
-  const [language, setLanguage] = useState('en')
+  const [language, setLanguage] = useState<Language>('en')
 
   const tabs = [
     { 

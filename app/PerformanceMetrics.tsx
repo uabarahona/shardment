@@ -2,7 +2,9 @@ import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Clock, AlertTriangle, BarChart, Target } from 'lucide-react'
 
-export function PerformanceMetrics({ language = 'en' }) {
+
+type Language = 'en' | 'es';
+export function PerformanceMetrics({ language = 'en' } : { language?: Language }) {
   const content = {
     en: {
       title: "Performance Tracking & Metrics",
