@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
-import { Lightbulb, Shield, Clock, Briefcase, Target, Music, DollarSign, Users, Star } from 'lucide-react'
+import { Shield, Briefcase, Target, Music, DollarSign, Star } from 'lucide-react'
 
 export function IndustryInsights({ language = 'en' }) {
   const content = {

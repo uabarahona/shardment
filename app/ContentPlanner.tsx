@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Calendar, Image, Video, DollarSign, Camera, Share2 } from 'lucide-react'
+import { Calendar, DollarSign, Camera, Share2 } from 'lucide-react'
 
 export function ContentPlanner({ language = 'en' }) {
 const content = {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { TrendingUp, Clock, AlertTriangle, BarChart, Target } from 'lucide-react'
+import { Clock, AlertTriangle, BarChart, Target } from 'lucide-react'
 
 export function PerformanceMetrics({ language = 'en' }) {
   const content = {

@@ -107,18 +107,18 @@ return (
                     {language === 'en' ? (
                         <>
                         Example:<br />
-                        Original: "No llames por favor"<br />
-                        Phonetic: "noh yah-mehs pohr fah-vohr"<br />
-                        Original: "Que no quiero saber de ti"<br />
-                        Phonetic: "keh noh kyeh-roh sah-behr deh tee"
+                        Original: &quot;No llames por favor&quot;<br />
+                        Phonetic: &quot;noh yah-mehs pohr fah-vohr&quot;<br />
+                        Original: &quot;Que no quiero saber de ti&quot;<br />
+                        Phonetic: &quot;keh noh kyeh-roh sah-behr deh tee&quot;
                         </>
                     ) : (
                         <>
                         Ejemplo:<br />
-                        Original: "No llames por favor"<br />
-                        Fonético: "noh yah-mehs pohr fah-vohr"<br />
-                        Original: "Que no quiero saber de ti"<br />
-                        Fonético: "keh noh kyeh-roh sah-behr deh tee"
+                        Original: &quot;No llames por favor&quot;<br />
+                        Fonético: &quot;noh yah-mehs pohr fah-vohr&quot;<br />
+                        Original: &quot;Que no quiero saber de ti&quot;<br />
+                        Fonético: &quot;keh noh kyeh-roh sah-behr deh tee&quot;
                         </>
                     )}
                     </p>
