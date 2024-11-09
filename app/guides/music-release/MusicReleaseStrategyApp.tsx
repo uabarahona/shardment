@@ -4,17 +4,16 @@ import { useState } from 'react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Info, Calendar, Video, BarChart, Settings, Globe } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 import { IndustryInsights } from './IndustryInsights'
 import { ReleaseTimeline } from './ReleaseTimeline'
-import { ContentPlanner } from './ContentPlanner'
+import { ContentPlanner } from '../../ContentPlanner'
 import { PerformanceMetrics } from './PerformanceMetrics'
 import { TechnicalSetup } from './TechnicalSetup'
+import { useLanguage } from './LanguageContext'
 
-type Language = 'en' | 'es';
 export default function MusicReleaseStrategyApp() {
   const [active, setActive] = useState('timeline')
-  const [language, setLanguage] = useState<Language>('en')
+  const { language, setLanguage, t } = useLanguage()
 
   const tabs = [
     { 
@@ -56,23 +55,6 @@ export default function MusicReleaseStrategyApp() {
 
   return (
     <div className="flex flex-col h-screen bg-gray-50 dark:bg-gray-900">
-      <header className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
-        <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-            {language === 'en' ? 'Music Release Strategy App' : 'App de Estrategia de Lanzamiento Musical'}
-          </h1>
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setLanguage(language === 'en' ? 'es' : 'en')}
-            className="flex items-center gap-2"
-          >
-            <Globe className="w-4 h-4" />
-            {language === 'en' ? 'Español' : 'English'}
-          </Button>
-        </div>
-      </header>
-
       <Tabs value={active} onValueChange={setActive} className="flex-1 flex flex-col">
         <TabsList className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto flex overflow-x-auto">
