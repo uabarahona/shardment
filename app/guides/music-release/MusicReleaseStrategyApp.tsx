@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { Info, Calendar, Video, BarChart, Settings, Globe } from 'lucide-react'
+import { Info, Calendar, Video, BarChart, Settings } from 'lucide-react'
 import { IndustryInsights } from './IndustryInsights'
 import { ReleaseTimeline } from './ReleaseTimeline'
 import { ContentPlanner } from '../../ContentPlanner'
@@ -13,7 +13,7 @@ import { useLanguage } from './LanguageContext'
 
 export default function MusicReleaseStrategyApp() {
   const [active, setActive] = useState('timeline')
-  const { language, setLanguage, t } = useLanguage()
+  const { language } = useLanguage()
 
   const tabs = [
     { 
